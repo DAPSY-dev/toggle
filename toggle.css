@@ -1,0 +1,28 @@
+.content {
+  padding: 50px;
+}
+
+.box {
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  max-width: 375px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  animation: show 0.3s ease forwards;
+}
+.box.is-toggled {
+  display: block;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

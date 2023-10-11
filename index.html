@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle</title>
+    <link rel="stylesheet" href="./de-reset.css">
+    <link rel="stylesheet" href="./toggle.css">
+  </head>
+  <body>
+    <div class="content">
+
+      <button type="button" class="js-toggle" data-id="toggleBox1">
+        Toggle box
+      </button>
+
+      <div class="box" data-toggle-box="toggleBox1">
+        <p style="margin: 0;">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat accusantium assumenda quam nesciunt necessitatibus a?
+        </p>
+      </div>
+
+    </div>
+
+    <script src="./toggle.js" defer></script>
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        window['toggleObj'] = {};
+
+        const toggleEls = [...document.querySelectorAll('.js-toggle')];
+
+        for (const toggleEl of toggleEls) {
+          window['toggleObj'][toggleEl.dataset.id] = new Toggle(toggleEl);
+        }
+      });
+    </script>
+
+  </body>
+</html>

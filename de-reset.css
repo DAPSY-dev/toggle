@@ -1,0 +1,65 @@
+@charset "UTF-8";
+:root { font-size: 16px; }
+*, ::before, ::after { box-sizing: inherit; }
+html { box-sizing: border-box; }
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: sans-serif;
+    font-size: 1rem;
+    line-height: 1.2;
+}
+header, nav, main, section, article, aside, time, footer { display: block; }
+address {
+    display: block;
+    font-style: normal;
+}
+template, [hidden] { display: none; }
+img, audio, video, svg, canvas, iframe {
+    display: inline-block;
+    vertical-align: middle;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0 0 0.67em;
+    padding: 0;
+}
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.17rem; }
+h4 { font-size: 1rem; }
+h5 { font-size: 0.83rem; }
+h6 { font-size: 0.67rem; }
+fieldset {
+    margin: 0;
+    padding: 0;
+    min-width: auto;
+    border: none;
+    min-inline-size: 0;
+}
+legend {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+input, textarea, select, button {
+    display: inline-block;
+    margin: 0;
+    padding: 0.3125em 0.625em;
+    font: inherit;
+}
+textarea { resize: vertical; }
+ul, ol {
+    margin: 0 0 0 1em;
+    padding: 0;
+}
+li {
+    margin: 0;
+    padding: 0;
+}
+hr {
+    margin: 0.67em 0;
+    border: 0;
+    border-bottom: 0.0625rem solid rgb(0, 0, 0);
+}
